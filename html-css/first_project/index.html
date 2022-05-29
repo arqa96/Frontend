@@ -1,0 +1,60 @@
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mukta:wght@200;300&family=Permanent+Marker&family=Tiro+Bangla&display=swap" rel="stylesheet">
+
+        
+        <link rel="stylesheet" href="style.css">
+        <link href='https://css.gg/close.css' rel='stylesheet'>
+        <link href='https://css.gg/menu.css' rel='stylesheet'>
+
+        <title>Practice</title>
+
+    </head>
+    <body>
+        <section class="header">
+
+            <!-- navigation -->
+            <nav>
+                <h1 class="logo"><a href="index.html">Prac<span>tice</span></a></h1>
+                <div class="nav-links" id="nav-links">
+                    <i class="gg-close" onclick="hideMenu()"></i>
+                    <ul> 
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <i class="gg-menu" onclick="showMenu()"></i>
+            </nav>
+
+            <!-- info -->
+            <div class="text-box">
+                <h1>Hello World!</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum perspiciatis, maiores dignissimos esse magnam illo unde a, harum, atque nulla eius adipisci tempora. Magni accusantium quas nam nisi, possimus quae.</p>
+                <button>DETAILS</button>
+            </div>
+        </section>
+        
+        <!-- script for toggle menu  -->
+        <script>
+            let navLinks = document.getElementById('nav-links')
+
+            function showMenu() {
+                navLinks.style.right = '0';
+            }
+
+            function hideMenu() {
+                navLinks.style.right = '-40vw';
+            }
+        </script>
+    </body>
+</html>
