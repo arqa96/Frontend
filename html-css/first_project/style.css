@@ -11,7 +11,7 @@
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background: linear-gradient(rgba(39, 51, 98, 0.5), rgba(39, 51, 98, 0.5)),  url("./1.jpg") center/cover;
+    background: linear-gradient(rgba(39, 51, 98, 0.5), rgba(39, 51, 98, 0.5)),  url("./main.jpg") center/cover;
 }
 
 nav {
@@ -124,7 +124,7 @@ button:active {
     transition: 0.1s;
 }
 
-nav i {
+nav .gg-close, nav .gg-menu {
     display: none;
 }
 
@@ -146,14 +146,11 @@ nav i {
         z-index: 2;
         transition: 0.5s;
     }
-    .nav-links i {
-        margin: 10px 0 0 10px;
-    }
 
     .nav-links ul li a {
         color: white;
     }
-    nav i {
+    nav  .gg-close, nav .gg-menu{
         display: block;
         color: white;
         font-size: 22px;
